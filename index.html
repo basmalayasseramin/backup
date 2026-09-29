@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="NEXUS 2050 - تجربة تفاعلية عن التغير المناخي والتكنولوجيا">
+
+    <title>NEXUS 2050 | مستقبل الأرض</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- =========================================
+         PRELOADER
+    ========================================== -->
+
+    <div class="preloader" id="preloader">
+
+        <div class="loader-core"></div>
+
+        <div class="loader-text">
+            INITIALIZING PLANETARY SYSTEM
+        </div>
+
+        <div class="loader-progress">
+            <span id="loaderProgress"></span>
+        </div>
+
+        <div class="loader-percent" id="loaderPercent">
+            0%
+        </div>
+
+    </div>
+
+
+    <!-- =========================================
+         BACKGROUND SYSTEM
+    ========================================== -->
+
+    <div class="background">
+
+        <div class="noise"></div>
+
+        <div class="grid"></div>
+
+        <div class="ambient ambient-1"></div>
+        <div class="ambient ambient-2"></div>
+        <div class="ambient ambient-3"></div>
+
+        <canvas id="particleCanvas"></canvas>
+
+    </div>
+
+
+    <!-- =========================================
+         NAVIGATION
+    ========================================== -->
+
+    <header class="navbar">
+
+        <div class="brand">
+
+            <div class="brand-mark">
+                N
+            </div>
+
+            <div>
+                <div class="brand-name">
+                    NEXUS
+                </div>
+
+                <div class="brand-subtitle">
+                    PLANETARY SYSTEM
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="system-status">
+
+            <span class="status-dot"></span>
+
+            <span>
+                SYSTEM ONLINE
+            </span>
+
+        </div>
+
+    </header>
+
+
+    <!-- =========================================
+         MAIN HERO
+    ========================================== -->
+
+    <main class="hero">
+
+        <!-- LEFT INFORMATION -->
+
+        <section class="hero-content">
+
+            <div class="eyebrow">
+
+                <span class="eyebrow-line"></span>
+
+                <span>
+                    PLANET EARTH / 2050
+                </span>
+
+            </div>
+
+
+            <h1>
+
+                <span class="title-line">
+                    THE FUTURE
+                </span>
+
+                <span class="title-gradient">
+                    IS NOW.
+                </span>
+
+            </h1>
+
+
+            <p class="hero-description">
+
+                مستقبل كوكبنا ليس شيئًا ننتظره.
+                إنه نتيجة للقرارات التي نتخذها اليوم.
+
+                <br>
+
+                <span>
+                    اكتشف العلاقة بين المناخ والتكنولوجيا
+                    وخذ قرارك نحو مستقبل أفضل.
+                </span>
+
+            </p>
+
+
+            <div class="hero-actions">
+
+                <button
+                    class="primary-button"
+                    id="enterButton">
+
+                    <span>
+                        ENTER THE FUTURE
+                    </span>
+
+                    <span class="button-arrow">
+                        ↗
+                    </span>
+
+                </button>
+
+
+                <button
+                    class="secondary-button"
+                    id="exploreButton">
+
+                    EXPLORE SYSTEM
+
+                </button>
+
+            </div>
+
+
+            <!-- DATA -->
+
+            <div class="hero-data">
+
+                <div class="data-item">
+
+                    <span class="data-label">
+                        TARGET YEAR
+                    </span>
+
+                    <span class="data-value">
+                        2050
+                    </span>
+
+                </div>
+
+
+                <div class="data-divider"></div>
+
+
+                <div class="data-item">
+
+                    <span class="data-label">
+                        SYSTEM
+                    </span>
+
+                    <span class="data-value green">
+                        ACTIVE
+                    </span>
+
+                </div>
+
+
+                <div class="data-divider"></div>
+
+
+                <div class="data-item">
+
+                    <span class="data-label">
+                        MODE
+                    </span>
+
+                    <span class="data-value">
+                        HUMAN
+                    </span>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================
+             EARTH
+        ====================================== -->
+
+        <section class="planet-section">
+
+            <div class="planet-label label-top">
+                <span></span>
+                ATMOSPHERE
+            </div>
+
+
+            <div class="planet-system">
+
+                <div class="planet-orbit orbit-a"></div>
+
+                <div class="planet-orbit orbit-b"></div>
+
+                <div class="planet-orbit orbit-c"></div>
+
+
+                <div class="planet">
+
+                    <div class="planet-light"></div>
+
+                    <div class="planet-land"></div>
+
+                    <div class="planet-cloud cloud-1"></div>
+                    <div class="planet-cloud cloud-2"></div>
+                    <div class="planet-cloud cloud-3"></div>
+
+                    <div class="planet-shine"></div>
+
+                </div>
+
+
+                <div class="planet-ring ring-1"></div>
+
+                <div class="planet-ring ring-2"></div>
+
+
+                <div class="planet-satellite">
+
+                    <div class="satellite-core"></div>
+
+                </div>
+
+            </div>
+
+
+            <div class="planet-label label-bottom">
+
+                <span></span>
+
+                PLANETARY CORE
+
+            </div>
+
+
+            <!-- FLOATING DATA CARD -->
+
+            <div class="floating-card">
+
+                <div class="card-header">
+
+                    <span>
+                        LIVE ANALYSIS
+                    </span>
+
+                    <span class="live">
+                        ● LIVE
+                    </span>
+
+                </div>
+
+
+                <div class="card-number">
+                    01
+                </div>
+
+
+                <div class="card-title">
+                    ONE PLANET
+                </div>
+
+
+                <div class="card-line">
+
+                    <span></span>
+
+                </div>
+
+
+                <div class="card-description">
+                    One planet.
+                    Billions of decisions.
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- =========================================
+         BOTTOM BAR
+    ========================================== -->
+
+    <footer class="bottom-bar">
+
+        <div class="scroll-indicator">
+
+            <span class="mouse">
+                <span></span>
+            </span>
+
+            <span>
+                SCROLL TO DISCOVER
+            </span>
+
+        </div>
+
+
+        <div class="coordinates">
+            30.0444° N &nbsp; 31.2357° E
+        </div>
+
+
+        <div class="version">
+            NEXUS / 01
+        </div>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
