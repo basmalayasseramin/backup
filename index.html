@@ -3,12 +3,10 @@
 
 <head>
     <meta charset="UTF-8">
-
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <meta name="description"
-          content="NEXUS 2050 - تجربة تفاعلية عن التغير المناخي والتكنولوجيا">
+        content="NEXUS 2050 - تجربة تفاعلية لاستكشاف التغير المناخي ودور التكنولوجيا في بناء المستقبل">
 
     <title>NEXUS 2050 | مستقبل الأرض</title>
 
@@ -17,20 +15,26 @@
 
 <body>
 
-    <!-- =========================================
-         PRELOADER
-    ========================================== -->
+    <!-- ==================================================
+         LOADING SCREEN
+    =================================================== -->
 
     <div class="preloader" id="preloader">
 
-        <div class="loader-core"></div>
+        <div class="loader-orbit">
+            <div class="loader-planet"></div>
+        </div>
 
-        <div class="loader-text">
+        <div class="loader-title">
+            NEXUS <span>2050</span>
+        </div>
+
+        <div class="loader-status">
             INITIALIZING PLANETARY SYSTEM
         </div>
 
         <div class="loader-progress">
-            <span id="loaderProgress"></span>
+            <div id="loaderProgress"></div>
         </div>
 
         <div class="loader-percent" id="loaderPercent">
@@ -40,9 +44,9 @@
     </div>
 
 
-    <!-- =========================================
-         BACKGROUND SYSTEM
-    ========================================== -->
+    <!-- ==================================================
+         BACKGROUND
+    =================================================== -->
 
     <div class="background">
 
@@ -50,175 +54,1154 @@
 
         <div class="grid"></div>
 
-        <div class="ambient ambient-1"></div>
-        <div class="ambient ambient-2"></div>
-        <div class="ambient ambient-3"></div>
+        <div class="ambient ambient-one"></div>
+        <div class="ambient ambient-two"></div>
 
         <canvas id="particleCanvas"></canvas>
 
     </div>
 
 
-    <!-- =========================================
+    <!-- ==================================================
          NAVIGATION
-    ========================================== -->
+    =================================================== -->
 
     <header class="navbar">
 
-        <div class="brand">
+        <a href="#home" class="brand">
 
-            <div class="brand-mark">
+            <div class="brand-symbol">
                 N
             </div>
 
             <div>
+
                 <div class="brand-name">
                     NEXUS
                 </div>
 
-                <div class="brand-subtitle">
-                    PLANETARY SYSTEM
+                <div class="brand-caption">
+                    PLANETARY FUTURE LAB
                 </div>
+
             </div>
 
-        </div>
+        </a>
+
+
+        <nav class="navigation">
+
+            <a href="#home" class="nav-link active">
+                HOME
+            </a>
+
+            <a href="#climate" class="nav-link">
+                CLIMATE
+            </a>
+
+            <a href="#technology" class="nav-link">
+                TECHNOLOGY
+            </a>
+
+            <a href="#mission" class="nav-link">
+                MISSION
+            </a>
+
+        </nav>
 
 
         <div class="system-status">
 
-            <span class="status-dot"></span>
+            <span class="status-light"></span>
 
-            <span>
-                SYSTEM ONLINE
-            </span>
+            SYSTEM ONLINE
 
         </div>
 
     </header>
 
 
-    <!-- =========================================
-         MAIN HERO
-    ========================================== -->
+    <!-- ==================================================
+         MAIN
+    =================================================== -->
 
-    <main class="hero">
-
-        <!-- LEFT INFORMATION -->
-
-        <section class="hero-content">
-
-            <div class="eyebrow">
-
-                <span class="eyebrow-line"></span>
-
-                <span>
-                    PLANET EARTH / 2050
-                </span>
-
-            </div>
+    <main>
 
 
-            <h1>
+        <!-- ==================================================
+             HERO
+        =================================================== -->
 
-                <span class="title-line">
-                    THE FUTURE
-                </span>
+        <section class="hero section" id="home">
 
-                <span class="title-gradient">
-                    IS NOW.
-                </span>
+            <div class="hero-content">
 
-            </h1>
+                <div class="eyebrow">
 
-
-            <p class="hero-description">
-
-                مستقبل كوكبنا ليس شيئًا ننتظره.
-                إنه نتيجة للقرارات التي نتخذها اليوم.
-
-                <br>
-
-                <span>
-                    اكتشف العلاقة بين المناخ والتكنولوجيا
-                    وخذ قرارك نحو مستقبل أفضل.
-                </span>
-
-            </p>
-
-
-            <div class="hero-actions">
-
-                <button
-                    class="primary-button"
-                    id="enterButton">
+                    <span class="eyebrow-line"></span>
 
                     <span>
-                        ENTER THE FUTURE
+                        EARTH / 2050 / FUTURE SIMULATION
                     </span>
 
-                    <span class="button-arrow">
-                        ↗
+                </div>
+
+
+                <h1 class="hero-title">
+
+                    <span>
+                        THE FUTURE
                     </span>
 
-                </button>
+                    <span class="gradient-text">
+                        IS NOW.
+                    </span>
+
+                </h1>
 
 
-                <button
-                    class="secondary-button"
-                    id="exploreButton">
+                <p class="hero-text">
 
-                    EXPLORE SYSTEM
+                    العالم الذي سنعيش فيه غدًا
+                    يبدأ بالقرارات التي نتخذها اليوم.
 
-                </button>
+                    <br>
+
+                    <span>
+                        اكتشف التغير المناخي،
+                        استكشف التكنولوجيا،
+                        ثم اصنع نسختك الخاصة من المستقبل.
+                    </span>
+
+                </p>
+
+
+                <div class="hero-buttons">
+
+                    <button
+                        class="btn btn-primary"
+                        id="startJourney">
+
+                        <span>
+                            ابدأ الرحلة
+                        </span>
+
+                        <span class="btn-icon">
+                            ↗
+                        </span>
+
+                    </button>
+
+
+                    <a
+                        href="#climate"
+                        class="btn btn-secondary">
+
+                        استكشف البيانات
+
+                    </a>
+
+                </div>
+
+
+                <div class="hero-metrics">
+
+                    <div class="metric">
+
+                        <span class="metric-label">
+                            TARGET
+                        </span>
+
+                        <strong>
+                            2050
+                        </strong>
+
+                    </div>
+
+
+                    <div class="metric-separator"></div>
+
+
+                    <div class="metric">
+
+                        <span class="metric-label">
+                            PLANET
+                        </span>
+
+                        <strong>
+                            EARTH
+                        </strong>
+
+                    </div>
+
+
+                    <div class="metric-separator"></div>
+
+
+                    <div class="metric">
+
+                        <span class="metric-label">
+                            MODE
+                        </span>
+
+                        <strong class="green">
+                            LIVE
+                        </strong>
+
+                    </div>
+
+                </div>
 
             </div>
 
 
-            <!-- DATA -->
+            <!-- ==================================================
+                 PLANET
+            =================================================== -->
 
-            <div class="hero-data">
+            <div class="hero-planet-area">
 
-                <div class="data-item">
-
-                    <span class="data-label">
-                        TARGET YEAR
-                    </span>
-
-                    <span class="data-value">
-                        2050
-                    </span>
-
-                </div>
+                <div class="planet-orbit orbit-one"></div>
+                <div class="planet-orbit orbit-two"></div>
+                <div class="planet-orbit orbit-three"></div>
 
 
-                <div class="data-divider"></div>
+                <div class="earth" id="earth">
 
+                    <div class="earth-light"></div>
 
-                <div class="data-item">
+                    <div class="earth-land"></div>
 
-                    <span class="data-label">
-                        SYSTEM
-                    </span>
+                    <div class="earth-cloud cloud-one"></div>
+                    <div class="earth-cloud cloud-two"></div>
+                    <div class="earth-cloud cloud-three"></div>
 
-                    <span class="data-value green">
-                        ACTIVE
-                    </span>
+                    <div class="earth-atmosphere"></div>
 
                 </div>
 
 
-                <div class="data-divider"></div>
+                <div class="earth-data-card">
+
+                    <div class="data-card-top">
+
+                        <span>
+                            LIVE PLANETARY DATA
+                        </span>
+
+                        <span class="live-dot">
+                            ● LIVE
+                        </span>
+
+                    </div>
+
+                    <div class="data-card-value">
+                        01
+                    </div>
+
+                    <div class="data-card-title">
+                        ONE PLANET
+                    </div>
+
+                    <div class="data-card-line"></div>
+
+                    <p>
+                        One planet.
+                        Billions of choices.
+                    </p>
+
+                </div>
 
 
-                <div class="data-item">
+                <div class="planet-label label-one">
+                    ATMOSPHERE
+                </div>
 
-                    <span class="data-label">
-                        MODE
+                <div class="planet-label label-two">
+                    BIOSPHERE
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ==================================================
+             CLIMATE INTRO
+        =================================================== -->
+
+        <section class="climate section" id="climate">
+
+            <div class="section-heading">
+
+                <div class="section-number">
+                    01
+                </div>
+
+                <div>
+
+                    <span class="section-kicker">
+                        THE CLIMATE SIGNAL
                     </span>
 
-                    <span class="data-value">
-                        HUMAN
+                    <h2>
+                        الأرض <span>تتغير.</span>
+                    </h2>
+
+                    <p>
+                        البيانات العلمية تساعدنا على رؤية
+                        التغيرات التي تحدث لكوكبنا بوضوح.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- ==================================================
+                 STATISTICS
+            =================================================== -->
+
+            <div class="statistics-grid">
+
+
+                <article class="stat-card stat-main">
+
+                    <div class="stat-icon">
+                        🌡
+                    </div>
+
+                    <span class="stat-label">
+                        GLOBAL WARMING
                     </span>
+
+                    <div class="stat-number">
+                        <span
+                            class="counter"
+                            data-target="1.1">
+                            0
+                        </span>
+                        <small>°C</small>
+                    </div>
+
+                    <p>
+                        ارتفاع الاحترار العالمي منذ
+                        1850–1900 وفق تقييم IPCC.
+                    </p>
+
+                    <div class="source">
+                        SOURCE / IPCC AR6
+                    </div>
+
+                </article>
+
+
+                <article class="stat-card">
+
+                    <div class="stat-icon">
+                        🧊
+                    </div>
+
+                    <span class="stat-label">
+                        GREENLAND ICE
+                    </span>
+
+                    <div class="stat-number">
+                        <span
+                            class="counter"
+                            data-target="279">
+                            0
+                        </span>
+                        <small>B TON/YEAR</small>
+                    </div>
+
+                    <p>
+                        متوسط فقدان كتلة جليد جرينلاند
+                        خلال 1993–2019.
+                    </p>
+
+                    <div class="source">
+                        SOURCE / NASA
+                    </div>
+
+                </article>
+
+
+                <article class="stat-card">
+
+                    <div class="stat-icon">
+                        🌊
+                    </div>
+
+                    <span class="stat-label">
+                        SEA LEVEL
+                    </span>
+
+                    <div class="stat-number">
+                        <span
+                            class="counter"
+                            data-target="20">
+                            0
+                        </span>
+                        <small>CM</small>
+                    </div>
+
+                    <p>
+                        ارتفاع مستوى سطح البحر العالمي
+                        تقريبًا خلال القرن الماضي.
+                    </p>
+
+                    <div class="source">
+                        SOURCE / NASA
+                    </div>
+
+                </article>
+
+
+                <article class="stat-card">
+
+                    <div class="stat-icon">
+                        🌊
+                    </div>
+
+                    <span class="stat-label">
+                        OCEAN ACIDITY
+                    </span>
+
+                    <div class="stat-number">
+                        <span
+                            class="counter"
+                            data-target="30">
+                            0
+                        </span>
+                        <small>%</small>
+                    </div>
+
+                    <p>
+                        زيادة حموضة مياه السطح منذ
+                        بداية العصر الصناعي تقريبًا.
+                    </p>
+
+                    <div class="source">
+                        SOURCE / NASA
+                    </div>
+
+                </article>
+
+            </div>
+
+
+            <!-- ==================================================
+                 DATA VISUALIZATION
+            =================================================== -->
+
+            <div class="data-panel">
+
+                <div class="data-panel-heading">
+
+                    <div>
+
+                        <span>
+                            CLIMATE INDICATOR
+                        </span>
+
+                        <h3>
+                            كيف تغيرت درجة الحرارة؟
+                        </h3>
+
+                    </div>
+
+                    <div class="data-live">
+                        DATA / HISTORICAL
+                    </div>
+
+                </div>
+
+
+                <div class="chart">
+
+                    <div class="chart-y">
+
+                        <span>
+                            +1.2
+                        </span>
+
+                        <span>
+                            +0.8
+                        </span>
+
+                        <span>
+                            +0.4
+                        </span>
+
+                        <span>
+                            0
+                        </span>
+
+                    </div>
+
+
+                    <div class="chart-area">
+
+                        <div class="chart-grid-line line-a"></div>
+                        <div class="chart-grid-line line-b"></div>
+                        <div class="chart-grid-line line-c"></div>
+                        <div class="chart-grid-line line-d"></div>
+
+
+                        <svg
+                            class="temperature-chart"
+                            viewBox="0 0 1000 350"
+                            preserveAspectRatio="none">
+
+                            <defs>
+
+                                <linearGradient
+                                    id="chartGradient"
+                                    x1="0"
+                                    y1="0"
+                                    x2="0"
+                                    y2="1">
+
+                                    <stop
+                                        offset="0%"
+                                        stop-color="#00f5a0"
+                                        stop-opacity=".35" />
+
+                                    <stop
+                                        offset="100%"
+                                        stop-color="#00f5a0"
+                                        stop-opacity="0" />
+
+                                </linearGradient>
+
+                            </defs>
+
+
+                            <path
+                                class="chart-fill"
+                                d="
+                                M0 310
+                                C100 305 150 290 220 285
+                                C300 275 330 270 390 250
+                                C460 235 490 220 550 205
+                                C620 190 650 175 710 155
+                                C780 135 820 105 875 90
+                                C930 75 960 45 1000 25
+                                L1000 350
+                                L0 350
+                                Z
+                                " />
+
+                            <path
+                                class="chart-line"
+                                d="
+                                M0 310
+                                C100 305 150 290 220 285
+                                C300 275 330 270 390 250
+                                C460 235 490 220 550 205
+                                C620 190 650 175 710 155
+                                C780 135 820 105 875 90
+                                C930 75 960 45 1000 25
+                                " />
+
+                        </svg>
+
+
+                        <div class="chart-point point-1"></div>
+                        <div class="chart-point point-2"></div>
+                        <div class="chart-point point-3"></div>
+                        <div class="chart-point point-4"></div>
+
+
+                        <div class="chart-years">
+
+                            <span>
+                                1880
+                            </span>
+
+                            <span>
+                                1950
+                            </span>
+
+                            <span>
+                                1980
+                            </span>
+
+                            <span>
+                                2000
+                            </span>
+
+                            <span>
+                                2023
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="chart-note">
+
+                    <span class="note-icon">
+                        i
+                    </span>
+
+                    <p>
+                        يعرض هذا الرسم اتجاهًا توضيحيًا مبنيًا
+                        على سجل درجات الحرارة العالمي؛
+                        البيانات العلمية الفعلية أكثر تفصيلًا
+                        وتستخدم طرق قياس ونماذج إحصائية متعددة.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- ==================================================
+                 IMPACT CARDS
+            =================================================== -->
+
+            <div class="impact-heading">
+
+                <span>
+                    WHAT IS CHANGING?
+                </span>
+
+                <h3>
+                    إشارات من كوكبنا
+                </h3>
+
+            </div>
+
+
+            <div class="impact-grid">
+
+                <article class="impact-card">
+
+                    <div class="impact-image forest-image">
+                        <span>01</span>
+                    </div>
+
+                    <div class="impact-content">
+
+                        <span>
+                            ECOSYSTEMS
+                        </span>
+
+                        <h3>
+                            النظم البيئية
+                        </h3>
+
+                        <p>
+                            ارتفاع الحرارة والتغيرات المناخية
+                            تؤثر في الأنظمة البيئية على اليابسة
+                            وفي المحيطات.
+                        </p>
+
+                    </div>
+
+                </article>
+
+
+                <article class="impact-card">
+
+                    <div class="impact-image ice-image">
+                        <span>02</span>
+                    </div>
+
+                    <div class="impact-content">
+
+                        <span>
+                            CRYOSPHERE
+                        </span>
+
+                        <h3>
+                            الجليد
+                        </h3>
+
+                        <p>
+                            الأقمار الصناعية تساعد العلماء
+                            على متابعة تغير الكتل الجليدية
+                            والغطاء الجليدي.
+                        </p>
+
+                    </div>
+
+                </article>
+
+
+                <article class="impact-card">
+
+                    <div class="impact-image ocean-image">
+                        <span>03</span>
+                    </div>
+
+                    <div class="impact-content">
+
+                        <span>
+                            OCEANS
+                        </span>
+
+                        <h3>
+                            المحيطات
+                        </h3>
+
+                        <p>
+                            المحيطات تمتص جزءًا كبيرًا من
+                            الحرارة والطاقة الزائدة في نظام الأرض.
+                        </p>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ==================================================
+             TECHNOLOGY
+        =================================================== -->
+
+        <section class="technology section" id="technology">
+
+            <div class="section-heading">
+
+                <div class="section-number">
+                    02
+                </div>
+
+                <div>
+
+                    <span class="section-kicker">
+                        TECHNOLOGY LAB
+                    </span>
+
+                    <h2>
+                        التكنولوجيا <span>تتدخل.</span>
+                    </h2>
+
+                    <p>
+                        من الطاقة النظيفة إلى الذكاء الاصطناعي،
+                        التكنولوجيا تمنحنا أدوات لفهم المشكلة
+                        وتصميم حلول أكثر استدامة.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="technology-grid">
+
+
+                <article
+                    class="tech-card featured-tech"
+                    data-tech="solar">
+
+                    <div class="tech-number">
+                        01
+                    </div>
+
+                    <div class="tech-visual solar-visual">
+
+                        <div class="sun"></div>
+
+                        <div class="solar-panel panel-one"></div>
+                        <div class="solar-panel panel-two"></div>
+                        <div class="solar-panel panel-three"></div>
+
+                    </div>
+
+                    <div class="tech-info">
+
+                        <span>
+                            CLEAN ENERGY
+                        </span>
+
+                        <h3>
+                            الطاقة الشمسية
+                        </h3>
+
+                        <p>
+                            تحويل ضوء الشمس إلى كهرباء
+                            باستخدام الخلايا الشمسية.
+                        </p>
+
+                    </div>
+
+                </article>
+
+
+                <article
+                    class="tech-card"
+                    data-tech="wind">
+
+                    <div class="tech-number">
+                        02
+                    </div>
+
+                    <div class="tech-visual wind-visual">
+
+                        <div class="wind-turbine">
+
+                            <div class="turbine-center"></div>
+
+                            <div class="blade blade-one"></div>
+                            <div class="blade blade-two"></div>
+                            <div class="blade blade-three"></div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="tech-info">
+
+                        <span>
+                            RENEWABLE POWER
+                        </span>
+
+                        <h3>
+                            طاقة الرياح
+                        </h3>
+
+                        <p>
+                            استغلال حركة الرياح لإنتاج
+                            الطاقة الكهربائية.
+                        </p>
+
+                    </div>
+
+                </article>
+
+
+                <article
+                    class="tech-card"
+                    data-tech="ai">
+
+                    <div class="tech-number">
+                        03
+                    </div>
+
+                    <div class="tech-visual ai-visual">
+
+                        <div class="ai-core">
+                            AI
+                        </div>
+
+                        <div class="ai-orbit ai-orbit-1"></div>
+                        <div class="ai-orbit ai-orbit-2"></div>
+
+                    </div>
+
+                    <div class="tech-info">
+
+                        <span>
+                            INTELLIGENCE
+                        </span>
+
+                        <h3>
+                            الذكاء الاصطناعي
+                        </h3>
+
+                        <p>
+                            تحليل كميات ضخمة من البيانات
+                            لمراقبة الأنظمة المناخية والبيئية.
+                        </p>
+
+                    </div>
+
+                </article>
+
+
+                <article
+                    class="tech-card"
+                    data-tech="city">
+
+                    <div class="tech-number">
+                        04
+                    </div>
+
+                    <div class="tech-visual city-visual">
+
+                        <div class="city-building b1"></div>
+                        <div class="city-building b2"></div>
+                        <div class="city-building b3"></div>
+                        <div class="city-building b4"></div>
+
+                    </div>
+
+                    <div class="tech-info">
+
+                        <span>
+                            FUTURE CITIES
+                        </span>
+
+                        <h3>
+                            المدن الذكية
+                        </h3>
+
+                        <p>
+                            استخدام البيانات وأجهزة الاستشعار
+                            لتحسين استهلاك الطاقة والموارد.
+                        </p>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+
+            <div class="tech-message">
+
+                <div class="tech-message-icon">
+                    ◈
+                </div>
+
+                <div>
+
+                    <span>
+                        THE QUESTION
+                    </span>
+
+                    <h3>
+                        هل تستطيع التكنولوجيا
+                        تغيير المسار؟
+                    </h3>
+
+                </div>
+
+                <button id="goMission">
+                    اختبر قرارك ↗
+                </button>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ==================================================
+             MISSION
+        =================================================== -->
+
+        <section class="mission section" id="mission">
+
+            <div class="mission-header">
+
+                <div class="section-number">
+                    03
+                </div>
+
+                <span class="section-kicker">
+                    CLIMATE MISSION
+                </span>
+
+                <h2>
+                    أنت صاحب القرار.
+                </h2>
+
+                <p>
+                    أمامك مدينة مستقبلية وميزانية محدودة.
+                    اختر التقنيات التي ستستثمر فيها.
+                    كل قرار سيؤثر على صحة المدينة.
+                </p>
+
+            </div>
+
+
+            <div class="mission-dashboard">
+
+
+                <div class="city-preview">
+
+                    <div class="city-sky">
+
+                        <div class="moon"></div>
+
+                        <div class="city-stars"></div>
+
+                    </div>
+
+
+                    <div
+                        class="future-city"
+                        id="futureCity">
+
+                        <div class="building city-b1"></div>
+                        <div class="building city-b2"></div>
+                        <div class="building city-b3"></div>
+                        <div class="building city-b4"></div>
+                        <div class="building city-b5"></div>
+
+                        <div class="city-road"></div>
+
+                        <div class="tree tree-one"></div>
+                        <div class="tree tree-two"></div>
+                        <div class="tree tree-three"></div>
+
+                    </div>
+
+
+                    <div class="city-status">
+
+                        <span>
+                            CITY STATUS
+                        </span>
+
+                        <strong id="cityStatus">
+                            UNSTABLE
+                        </strong>
+
+                    </div>
+
+                </div>
+
+
+                <div class="mission-controls">
+
+                    <div class="mission-budget">
+
+                        <div>
+
+                            <span>
+                                AVAILABLE ENERGY
+                            </span>
+
+                            <strong>
+                                <span id="budget">
+                                    100
+                                </span>
+                                %
+                            </strong>
+
+                        </div>
+
+                        <div class="budget-bar">
+                            <span id="budgetBar"></span>
+                        </div>
+
+                    </div>
+
+
+                    <div class="mission-options">
+
+
+                        <button
+                            class="mission-option"
+                            data-cost="20"
+                            data-impact="18">
+
+                            <span class="option-icon">
+                                ☀
+                            </span>
+
+                            <span>
+                                SOLAR GRID
+                            </span>
+
+                            <strong>
+                                -20
+                            </strong>
+
+                        </button>
+
+
+                        <button
+                            class="mission-option"
+                            data-cost="15"
+                            data-impact="14">
+
+                            <span class="option-icon">
+                                ♻
+                            </span>
+
+                            <span>
+                                SMART RECYCLING
+                            </span>
+
+                            <strong>
+                                -15
+                            </strong>
+
+                        </button>
+
+
+                        <button
+                            class="mission-option"
+                            data-cost="25"
+                            data-impact="22">
+
+                            <span class="option-icon">
+                                ⚡
+                            </span>
+
+                            <span>
+                                ELECTRIC MOBILITY
+                            </span>
+
+                            <strong>
+                                -25
+                            </strong>
+
+                        </button>
+
+
+                        <button
+                            class="mission-option"
+                            data-cost="20"
+                            data-impact="20">
+
+                            <span class="option-icon">
+                                🤖
+                            </span>
+
+                            <span>
+                                AI MONITORING
+                            </span>
+
+                            <strong>
+                                -20
+                            </strong>
+
+                        </button>
+
+
+                    </div>
+
+
+                    <div class="mission-score">
+
+                        <span>
+                            PLANET HEALTH
+                        </span>
+
+                        <strong id="missionScore">
+                            32
+                        </strong>
+
+                        <div class="score-track">
+                            <span id="scoreBar"></span>
+                        </div>
+
+                    </div>
+
+
+                    <button
+                        class="mission-reset"
+                        id="resetMission">
+
+                        RESET SIMULATION
+
+                    </button>
 
                 </div>
 
@@ -227,103 +1210,150 @@
         </section>
 
 
-        <!-- =====================================
-             EARTH
-        ====================================== -->
 
-        <section class="planet-section">
+        <!-- ==================================================
+             FINAL CTA
+        =================================================== -->
 
-            <div class="planet-label label-top">
-                <span></span>
-                ATMOSPHERE
-            </div>
+        <section class="final-section">
 
+            <div class="final-orb"></div>
 
-            <div class="planet-system">
+            <div class="final-content">
 
-                <div class="planet-orbit orbit-a"></div>
+                <span class="section-kicker">
+                    THE CHOICE IS YOURS
+                </span>
 
-                <div class="planet-orbit orbit-b"></div>
+                <h2>
+                    المستقبل
+                    <span>
+                        لم يُكتب بعد.
+                    </span>
+                </h2>
 
-                <div class="planet-orbit orbit-c"></div>
+                <p>
+                    العلم يخبرنا بما يحدث.
+                    التكنولوجيا تمنحنا الأدوات.
+                    أما المستقبل، فتساهم قراراتنا في تشكيله.
+                </p>
 
+                <button
+                    class="final-button"
+                    id="restartButton">
 
-                <div class="planet">
+                    ابدأ التجربة من جديد ↗
 
-                    <div class="planet-light"></div>
-
-                    <div class="planet-land"></div>
-
-                    <div class="planet-cloud cloud-1"></div>
-                    <div class="planet-cloud cloud-2"></div>
-                    <div class="planet-cloud cloud-3"></div>
-
-                    <div class="planet-shine"></div>
-
-                </div>
-
-
-                <div class="planet-ring ring-1"></div>
-
-                <div class="planet-ring ring-2"></div>
-
-
-                <div class="planet-satellite">
-
-                    <div class="satellite-core"></div>
-
-                </div>
+                </button>
 
             </div>
 
+        </section>
 
-            <div class="planet-label label-bottom">
 
-                <span></span>
 
-                PLANETARY CORE
+        <!-- ==================================================
+             SOURCES
+        =================================================== -->
+
+        <section class="sources section">
+
+            <div class="sources-heading">
+
+                <span>
+                    RESEARCH & SOURCES
+                </span>
+
+                <h2>
+                    مصادر المشروع
+                </h2>
 
             </div>
 
 
-            <!-- FLOATING DATA CARD -->
+            <div class="source-list">
 
-            <div class="floating-card">
-
-                <div class="card-header">
+                <a
+                    href="https://science.nasa.gov/climate-change/evidence/"
+                    target="_blank"
+                    rel="noopener noreferrer">
 
                     <span>
-                        LIVE ANALYSIS
+                        NASA
                     </span>
 
-                    <span class="live">
-                        ● LIVE
+                    <strong>
+                        Evidence of Climate Change
+                    </strong>
+
+                    <small>
+                        Science / Climate
+                    </small>
+
+                    <b>
+                        ↗
+                    </b>
+
+                </a>
+
+
+                <a
+                    href="https://science.nasa.gov/climate-change/"
+                    target="_blank"
+                    rel="noopener noreferrer">
+
+                    <span>
+                        NASA
                     </span>
 
-                </div>
+                    <strong>
+                        Climate Change
+                    </strong>
+
+                    <small>
+                        Science / Earth
+                    </small>
+
+                    <b>
+                        ↗
+                    </b>
+
+                </a>
 
 
-                <div class="card-number">
-                    01
-                </div>
+                <a
+                    href="https://www.ipcc.ch/synthesis-report/"
+                    target="_blank"
+                    rel="noopener noreferrer">
+
+                    <span>
+                        IPCC
+                    </span>
+
+                    <strong>
+                        AR6 Synthesis Report — 2023
+                    </strong>
+
+                    <small>
+                        Scientific Assessment
+                    </small>
+
+                    <b>
+                        ↗
+                    </b>
+
+                </a>
+
+            </div>
 
 
-                <div class="card-title">
-                    ONE PLANET
-                </div>
+            <div class="copyright">
 
+                NEXUS 2050 © 2026
 
-                <div class="card-line">
-
-                    <span></span>
-
-                </div>
-
-
-                <div class="card-description">
-                    One planet.
-                    Billions of decisions.
-                </div>
+                <span>
+                    BUILT FOR THE FUTURE
+                </span>
 
             </div>
 
@@ -332,36 +1362,9 @@
     </main>
 
 
-    <!-- =========================================
-         BOTTOM BAR
-    ========================================== -->
-
-    <footer class="bottom-bar">
-
-        <div class="scroll-indicator">
-
-            <span class="mouse">
-                <span></span>
-            </span>
-
-            <span>
-                SCROLL TO DISCOVER
-            </span>
-
-        </div>
-
-
-        <div class="coordinates">
-            30.0444° N &nbsp; 31.2357° E
-        </div>
-
-
-        <div class="version">
-            NEXUS / 01
-        </div>
-
-    </footer>
-
+    <!-- ==================================================
+         JAVASCRIPT
+    =================================================== -->
 
     <script src="script.js"></script>
 
